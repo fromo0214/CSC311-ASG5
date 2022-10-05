@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Build Test",
+      "setup": "ant clean",
+      "run": "ant build",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "WikiPhilosophyTest",
+      "setup": "ant build",
+      "run": "ant WikiPhilosophyTest",
+      "input": "",
+      "output": "[junit] Tests run: 1, Failures: 0, Errors: 0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
